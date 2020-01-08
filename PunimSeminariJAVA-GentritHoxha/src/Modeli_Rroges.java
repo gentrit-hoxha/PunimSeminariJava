@@ -11,6 +11,7 @@
 * totali         - totali rroges
 * taksa1,taksa2,taksa3 - taksa e rroges ne varesi te oreve te punes 
 * pensioni       - pensioni qe eshte 5% e totali */
+
 public class Modeli_Rroges {
 
    public  int ora_rregullt, ora_shtese , gjeresia , lartesia;  
