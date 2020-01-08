@@ -1,7 +1,11 @@
  /** Klase e cila e ka metoden main 
      * dhe me ane te se ciles mund te themi se kemi nje aplikacion
      * kjo klase e kontrollon rrjedhen e aplikacionit duke marr informata prej Output_Rroga 
-     * Output_Rroga merr nga Input_Roga dhe Model_Rroga*/
+     * Output_Rroga merr nga Input_Roga dhe Model_Rroga
+     * 
+     * @author Gentrit Hoxha
+     * @Copyright Gentrit Hoxha
+     * */
 
 public class Kontrolla_Rroges {
    public static void main (String [] args){
