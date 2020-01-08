@@ -58,8 +58,7 @@ public class Modeli_Rroges {
    } 
    
    /*kontrollon stringun per emer, mbiemer dhe poziten te mos jene bosh
-   *dhe pastaj mos ta lejon te shkoj me tutje por te mbyllet programi
-   */
+   *dhe pastaj mos ta lejon te shkoj me tutje por te mbyllet programi*/
    public void kontrolla_inputit (){
    
       if (emri == null || emri.equals("") ){
