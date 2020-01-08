@@ -1,6 +1,5 @@
 import javax.swing.*;
-/** Input_Rroga eshte klase view e cila inicializon variblat
-* duke shfrytezuar klasen Model_Rroga */
+/** Input_Rroga eshte klase view e cila inicializon variblat duke shfrytezuar klasen Model_Rroga */
 public class Input_Rroga{
 
   //Eshte krijuar nje objekt i klases modeluese per ti inicializuar variablat  
