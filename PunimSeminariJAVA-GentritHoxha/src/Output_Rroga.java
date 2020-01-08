@@ -25,11 +25,11 @@ public class Output_Rroga  extends JPanel
       model.gjeresia = 1000;
       model.lartesia = 700;
    
-     //metodat te cilat kontrollojne kushtet per rroge,takse, dhe pension
+     //Metodat te cilat kontrollojne kushtet per rroge,takse, dhe pension
       model.llogaritja_rroges();
       model.taksa_dhe_pensioni();
       
-      //krijimi i nje dritare JFrame dhe vendosja grafike nga paintComponent
+      //Krijimi i nje dritare JFrame dhe vendosja grafike nga paintComponent
       JFrame obj = new JFrame();
       obj.setSize(model.gjeresia,model.lartesia);
       obj.setTitle("Punim Seminari ne JAVA - Llogaritja e pages javore");
@@ -38,7 +38,7 @@ public class Output_Rroga  extends JPanel
    }  
      
    
-   //metode e cila permban gjithe permbajten e nevojshme per shfaqjen e te dhenave 
+   //Metode e cila permban gjithe permbajten e nevojshme per shfaqjen e te dhenave 
    public void paintComponent(Graphics g)
    {
        
@@ -49,7 +49,7 @@ public class Output_Rroga  extends JPanel
       //DecimalFormat per ta ndryshuar presjen dhjetore
       DecimalFormat formatter = new DecimalFormat("0.00");
          
-      //dimensionet e panelit
+      //Dimensionet e panelit
       model.gjeresia = 985;
       model.lartesia = 662;
      
