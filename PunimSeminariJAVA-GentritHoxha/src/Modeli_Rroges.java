@@ -75,7 +75,7 @@ public class Modeli_Rroges {
       }
       
       else {
-      System.exit(0);
+ 
       }
    }
    
