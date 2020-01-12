@@ -1,5 +1,5 @@
 # PunimSeminariJava
-# author:Gentrit Hoxha  
+# author:Gentrit Hoxha and Zenit Neziri
 @ This application calculates the salary for a week based on hours work and hourly payrate
 @ Also calculates the Gros and Net pay with all the deductions
 @ Most important you can see the payroll in the end
