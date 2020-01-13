@@ -1,4 +1,4 @@
-/**Klasa modeluese e cila ben kalkulimet e duhura per rroge takse dhe pension
+/**Klasa modeluese e cila ben kalkullllimet e duhura per rroge takse dhe pension
 * Pastaj keto variabla do ti inicializoj Input_Rroga dhe i dergon ne Output_Rroga
 * ora_rregullt   - varibale tregon oret e rregullta te punes
 * ora_shtese     - variabel tregon oret shtese te punes 
@@ -11,29 +11,26 @@
 * totali         - totali rroges
 * taksa1,taksa2,taksa3 - taksa e rroges ne varesi te oreve te punes 
 * pensioni       - pensioni qe eshte 5% e totali */
-
 public class Modeli_Rroges {
 
    public  int ora_rregullt, ora_shtese , gjeresia , lartesia;  
    public double paga_rregullt,rroga_rregullt,rroga_shtese,totali,taksa1,taksa2,taksa3,pensioni;
    public String emri,mbiemri,pozita;  
   
-   /**Metode e cila ben llogaritjen e pages ne varesi te oreve te punuara*/ 
+   /**Metode e cila ben llogaritjen e pages ne varesi te oreve te punuara */
    public void llogaritja_rroges(){
    
-      if( ora_rregullt>0 && ora_rregullt<30){
+      if( ora_rregullt>0 && ora_rregullt<=40){
          rroga_rregullt = ora_rregullt*paga_rregullt;
          totali = rroga_rregullt;
       }
-      
-      else if (ora_rregullt>30 && ora_rregullt<40){
-         rroga_rregullt = ora_rregullt*paga_rregullt;
-         totali = rroga_rregullt; 
-      }     
-      else if (ora_rregullt>=40) {
+           
+      else if (ora_rregullt>40) {
          rroga_rregullt = 40*paga_rregullt;
+         
          ora_shtese = ora_rregullt-40;
-         rroga_shtese = ora_shtese*paga_rregullt*1.5;
+         rroga_shtese = ora_shtese*(paga_rregullt*1.5);
+         
          totali = rroga_rregullt + rroga_shtese;
       }
       else  { totali = 0; ora_rregullt=0; ora_shtese=0; }   
@@ -50,6 +47,7 @@ public class Modeli_Rroges {
       else if (ora_rregullt>30 && ora_rregullt<40){ 
          taksa2= 0.25 * totali;
          pensioni = 0.05*totali;}
+      
       else if (ora_rregullt>40){
          taksa3 = 0.28*totali;
          pensioni = 0.05*totali;}
@@ -58,8 +56,7 @@ public class Modeli_Rroges {
          ora_shtese=0;}
    } 
    
-   /*Metode qe kontrollon stringun per emer, mbiemer dhe poziten te mos jene bosh
-     *dhe pastaj mos ta lejon te shkoj me tutje por te mbyllet programi*/
+   /**kontrollon stringun per emer mbiemer dhe poziten te mos jene bosh*/
    public void kontrolla_inputit (){
    
       if (emri == null || emri.equals("") ){
@@ -73,11 +70,9 @@ public class Modeli_Rroges {
       else if (pozita == null || pozita.equals("") ){
          System.exit(0);
       }
-      
       else {
- 
+      
       }
-   }
    
-   
+   }   
 }
