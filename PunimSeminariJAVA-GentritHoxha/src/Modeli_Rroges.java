@@ -18,7 +18,7 @@ public class Modeli_Rroges {
    public double paga_rregullt,rroga_rregullt,rroga_shtese,totali,taksa1,taksa2,taksa3,pensioni;
    public String emri,mbiemri,pozita;  
   
-   //Metode e cila ben llogaritjen e pages ne varesi te oreve te punuara 
+   /**Metode e cila ben llogaritjen e pages ne varesi te oreve te punuara*/ 
    public void llogaritja_rroges(){
    
       if( ora_rregullt>0 && ora_rregullt<30){
@@ -40,7 +40,7 @@ public class Modeli_Rroges {
    
    } 
    
-   //Metode e cila ben llogaritjen e takses dhe pensionit te totalit te rroges
+   /**Metode e cila ben llogaritjen e takses dhe pensionit te totalit te rroges*/
    public void taksa_dhe_pensioni (){
    
       if(ora_rregullt>0 && ora_rregullt<30){
@@ -58,8 +58,8 @@ public class Modeli_Rroges {
          ora_shtese=0;}
    } 
    
-   /*kontrollon stringun per emer, mbiemer dhe poziten te mos jene bosh
-   *dhe pastaj mos ta lejon te shkoj me tutje por te mbyllet programi*/
+   /*Metode qe kontrollon stringun per emer, mbiemer dhe poziten te mos jene bosh
+     *dhe pastaj mos ta lejon te shkoj me tutje por te mbyllet programi*/
    public void kontrolla_inputit (){
    
       if (emri == null || emri.equals("") ){
